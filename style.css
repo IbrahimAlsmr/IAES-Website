@@ -82,25 +82,22 @@ body {
 .nav-right .nav-icon:hover {
     color: #fff;
 }
-.nav-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 12px;
-}
-
 .nav-icon img {
-    width: 28px;              /* حجم الصورة */
-    height: 28px;
-    object-fit: contain;      /* يمنع التشويه */
+    width: 32px;
+    height: 32px;
+    object-fit: cover;      /* ensures perfect cropping */
+    border-radius: 50%;     /* makes the image a circle */
+    border: 2px solid var(--gold); /* optional gold ring */
+    padding: 2px;           /* optional spacing inside the ring */
     filter: drop-shadow(0 0 4px var(--gold));
     transition: 0.3s ease;
 }
 
 .nav-icon img:hover {
-    transform: scale(1.15);   /* تكبير بسيط */
+    transform: scale(1.15);
     filter: drop-shadow(0 0 6px var(--gold));
 }
+
 
 
 /* ================= HERO ================= */

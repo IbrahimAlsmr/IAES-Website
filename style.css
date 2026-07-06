@@ -304,8 +304,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 40px;
+    gap: 20px;          /* smaller spacing */
+    margin-top: 30px;
 }
 
 /* Each contact card */
@@ -313,30 +313,31 @@ body {
     text-align: center;
 }
 
-/* Circular button with image */
+/* Circular button image */
 .contact-btn img {
-    width: 70px;
-    height: 70px;
+    width: 40px;        /* was 70px → smaller */
+    height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--gold);
-    padding: 4px;
+    border: 2px solid var(--gold);  /* thinner border */
+    padding: 2px;       /* less padding */
     background: #000;
-    transition: 0.3s ease;
-    filter: drop-shadow(0 0 6px var(--gold-dark));
+    transition: 0.25s ease;
+    filter: drop-shadow(0 0 4px var(--gold-dark));
 }
 
 .contact-btn img:hover {
-    transform: scale(1.15);
-    filter: drop-shadow(0 0 10px var(--gold));
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 7px var(--gold));
 }
 
 /* Label under each button */
 .contact-label {
-    margin-top: 12px;
-    font-size: 16px;
+    margin-top: 8px;
+    font-size: 14px;    /* slightly smaller text */
     color: #DDDDDD;
 }
+
 
 /* ================= FOOTER ================= */
 

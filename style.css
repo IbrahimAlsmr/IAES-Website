@@ -82,30 +82,26 @@ body {
 .nav-right .nav-icon:hover {
     color: #fff;
 }
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
 .nav-icon img {
-    width: 28px;
+    width: 28px;              /* حجم الصورة */
     height: 28px;
-    object-fit: contain;
+    object-fit: contain;      /* يمنع التشويه */
     filter: drop-shadow(0 0 4px var(--gold));
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .nav-icon img:hover {
-    transform: scale(1.15);
+    transform: scale(1.15);   /* تكبير بسيط */
     filter: drop-shadow(0 0 6px var(--gold));
-}
-.nav-icon img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 4px var(--gold));
-    transition: 0.3s;
 }
 
-.nav-icon img:hover {
-    transform: scale(1.15);
-    filter: drop-shadow(0 0 6px var(--gold));
-}
 
 /* ================= HERO ================= */
 

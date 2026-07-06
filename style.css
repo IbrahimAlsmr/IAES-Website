@@ -299,6 +299,44 @@ body {
     background: var(--gold);
     color: #000;
 }
+/* CONTACT ROW */
+.contact-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+/* Each contact card */
+.contact-card {
+    text-align: center;
+}
+
+/* Circular button with image */
+.contact-btn img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    padding: 4px;
+    background: #000;
+    transition: 0.3s ease;
+    filter: drop-shadow(0 0 6px var(--gold-dark));
+}
+
+.contact-btn img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px var(--gold));
+}
+
+/* Label under each button */
+.contact-label {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #DDDDDD;
+}
 
 /* ================= FOOTER ================= */
 

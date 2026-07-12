@@ -9,35 +9,43 @@
 
 <body>
 
-    <!-- ================= NAVBAR (SCROLLING) ================= -->
-    <nav class="navbar">
+    <!-- ================= NAVBAR (RESPONSIVE, ACCESSIBLE) ================= -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a class="skip-link" href="#main">Skip to main content</a>
+
         <div class="nav-left">
-            <img src="images/Logo.jpg" alt="IAES Logo" class="nav-logo">
-            <span class="nav-title">IA Engineering Solutions</span>
+            <a href="/" class="brand" aria-label="IA Engineering Solutions">
+                <img src="images/Logo.jpg" alt="IAES Logo" class="nav-logo">
+                <span class="nav-title">IA Engineering Solutions</span>
+            </a>
         </div>
 
-        <div class="nav-center">
-            <a href="#vision">Vision</a>
-            <a href="#motto">Motto</a>
-            <a href="#about">Who we are</a>
-            <a href="#services">Our work</a>
-            <a href="#contact">Contact us</a>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-center" id="primary-navigation">
+            <ul class="nav-list">
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#motto">Motto</a></li>
+                <li><a href="#about">Who we are</a></li>
+                <li><a href="#services">Our work</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
         </div>
 
         <div class="nav-right">
-            <a href="https://www.facebook.com/profile.php?id=61565906831238" target="_blank" class="nav-icon">
-                           
-                <img src="images/face.png" alt="facebooklogo">
+            <a href="https://www.facebook.com/profile.php?id=61565906831238" target="_blank" class="nav-icon" aria-label="IAES on Facebook">
+                <img src="images/face.png" alt="facebook logo">
             </a>
-            <a href="https://www.linkedin.com/company/iaengineeringsolution/" target="_blank" class="nav-icon">
-                <!-- small linkedin icon placeholder -->
-                <img src="images/linke.png" alt="LinkedIn">            
+            <a href="https://www.linkedin.com/company/iaengineeringsolution/" target="_blank" class="nav-icon" aria-label="IAES on LinkedIn">
+                <img src="images/linke.png" alt="LinkedIn logo">            
             </a>
         </div>
     </nav>
 
     <!-- ================= HERO SECTION ================= -->
-    <header class="hero">
+    <header class="hero" id="main">
 
         <!-- IAES LOGO (center, fading into background) -->
         <div class="logo-container">
@@ -63,7 +71,7 @@
     </header>
 
     <!-- ================= VISION SECTION ================= -->
-    <section id="vision" class="section slide-left">
+    <section id="vision" class="section slide-left" data-id="vision">
         <h2>Our Vision</h2>
         <p>
             To become a trusted engineering partner that bridges ideas and reality by delivering practical,
@@ -72,7 +80,7 @@
     </section>
 
     <!-- ================= MOTTO SECTION ================= -->
-    <section id="motto" class="section slide-right">
+    <section id="motto" class="section slide-right" data-id="motto">
         <h2>Our Motto</h2>
         <p>
             From concept to prototype — IAES turns engineering challenges into clear, structured, and executable solutions.
@@ -80,7 +88,7 @@
     </section>
 
     <!-- ================= ABOUT SECTION ================= -->
-    <section id="about" class="about section slide-left">
+    <section id="about" class="about section slide-left" data-id="about">
         <h2>Who We Are</h2>
         <p>
             IAES (IA Engineering Solutions) provides complete engineering and technical support for students,
@@ -97,7 +105,7 @@
     </section>
 
     <!-- ================= SERVICES SECTION ================= -->
-    <section id="services" class="services section slide-right">
+    <section id="services" class="services section slide-right" data-id="services">
         <h2>Our Work & Services</h2>
 
         <div class="services-grid">
@@ -135,7 +143,7 @@
     </section>
 
     <!-- ================= CONTACT SECTION ================= -->
-  <div class="contact-row">
+  <div id="contact" class="contact-row" data-id="contact">
 
     <!-- Facebook -->
     <div class="contact-box">
